@@ -1,0 +1,69 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VIZNaloga2"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" x:Class="VIZNaloga2.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="481.418" Width="832.727" Background="AntiqueWhite">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="210" Margin="28,28,0,0" TextWrapping="Wrap" x:Name="OrginalnoPolje"  VerticalAlignment="Top" Width="168"/>
+        <TextBox HorizontalAlignment="Left" Height="210" Margin="270,28,0,0" TextWrapping="Wrap" x:Name="Sifrirana"  VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" x:Name="RocnaMenjava1" Height="50" Margin="28,309,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="69"/>
+        <TextBox HorizontalAlignment="Left" Height="50" x:Name="RocnaMenjava2" Margin="130,309,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="66"/>
+        <Button Content="Desifriraj" Click="Button_Click" HorizontalAlignment="Left" Margin="692,277,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Ročna menjava črk" x:Name="RocnaMenjava" Click="RocnaMenjava_Click" HorizontalAlignment="Left" Margin="53,367,0,0" VerticalAlignment="Top" Width="143"/>
+        <TextBox HorizontalAlignment="Left" Height="210" Margin="568,28,0,0" TextWrapping="Wrap" x:Name="Resitev" VerticalAlignment="Top" Width="199"/>
+        <TextBox HorizontalAlignment="Left" Height="102" Margin="293,287,0,0" TextWrapping="Wrap" x:Name="TestOrginal" VerticalAlignment="Top" Width="92"/>
+        <TextBox HorizontalAlignment="Left" Height="102" Margin="485,287,0,0" TextWrapping="Wrap" x:Name="testSifrirano" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Orginalno/referencno besedilo" HorizontalAlignment="Left" Margin="24,3,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sifrirano besedilo" HorizontalAlignment="Left" Margin="270,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Frkvečna analita orginala:" HorizontalAlignment="Left" Margin="270,257,0,0" VerticalAlignment="Top"/>
+        <Label Content="Frkvečna analita sifriranega:" HorizontalAlignment="Left" Margin="471,257,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dešifrirano:" HorizontalAlignment="Left" Margin="627,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="IZ" HorizontalAlignment="Left" Margin="52,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.276,-0.336"/>
+        <Label Content="V" HorizontalAlignment="Left" Margin="154,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.392,-1.009"/>
+        <Button Content="Shrani desifrirano besedilo" x:Name="ShraniBesedilo" Click="ShraniBesedilo_Click" HorizontalAlignment="Left" Margin="603,309,0,0" VerticalAlignment="Top" Width="164"/>
+        <Button Content="Odpri" Click="OdpriOrginalno_Click" x:Name="OdpriOrginalno" HorizontalAlignment="Left" Margin="67,243,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Odpri" Click="OdpriSifrirano_Click"  x:Name="OdpriSifrirano" HorizontalAlignment="Left" Margin="310,242,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Graf rešitev" Name="GrafKonecButn" Visibility="Hidden" Click="Button_Click_1" HorizontalAlignment="Left" Margin="653,359,0,0" VerticalAlignment="Top" Width="101"/>
+        <Button Content="GrafOrginal"  Visibility="Hidden" x:Name="GrafOrginal" Click="GrafOrginal_Click" HorizontalAlignment="Left" Margin="302,394,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="GrafSifriran" x:Name="GrafSifriran" Visibility="Hidden" Click="GrafSifriran_Click" HorizontalAlignment="Left" Margin="497,394,0,0" VerticalAlignment="Top" Width="75"/>
+        <dxc:ChartControl x:Name="GrafKonec"  Visibility="Hidden" Margin="0,0,0.6,0.073">
+            <dxc:ChartControl.Legends>
+                <dxc:Legend/>
+            </dxc:ChartControl.Legends>
+            <dxc:XYDiagram2D>
+                <dxc:BarSideBySideSeries2D DisplayName="Št ponovitev" BarWidth="0.4">
+                    <dxc:SeriesPoint x:Name="a" Argument="a"/>
+                    <dxc:SeriesPoint x:Name="b" Argument="b"/>
+                    <dxc:SeriesPoint x:Name="c" Argument="c"/>
+                    <dxc:SeriesPoint x:Name="č" Argument="č"/>
+                    <dxc:SeriesPoint x:Name="d" Argument="d"/>
+                    <dxc:SeriesPoint x:Name="ee" Argument="e"/>
+                    <dxc:SeriesPoint x:Name="f" Argument="f"/>
+                    <dxc:SeriesPoint x:Name="g" Argument="g"/>
+                    <dxc:SeriesPoint x:Name="h" Argument="h"/>
+                    <dxc:SeriesPoint x:Name="i" Argument="i"/>
+                    <dxc:SeriesPoint x:Name="j" Argument="j"/>
+                    <dxc:SeriesPoint x:Name="k" Argument="k"/>
+                    <dxc:SeriesPoint x:Name="l" Argument="l"/>
+                    <dxc:SeriesPoint x:Name="m" Argument="m"/>
+                    <dxc:SeriesPoint x:Name="n" Argument="n"/>
+                    <dxc:SeriesPoint x:Name="o" Argument="o"/>
+                    <dxc:SeriesPoint x:Name="p" Argument="p"/>
+                    <dxc:SeriesPoint x:Name="r" Argument="r"/>
+                    <dxc:SeriesPoint x:Name="s" Argument="s"/>
+                    <dxc:SeriesPoint x:Name="š" Argument="š"/>
+                    <dxc:SeriesPoint x:Name="t" Argument="t"/>
+                    <dxc:SeriesPoint x:Name="u" Argument="u"/>
+                    <dxc:SeriesPoint x:Name="v" Argument="v"/>
+                    <dxc:SeriesPoint x:Name="z" Argument="z"/>
+                    <dxc:SeriesPoint x:Name="ž" Argument="ž"/>
+                </dxc:BarSideBySideSeries2D>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl>
+        <Button Content="ZapriGraf" Visibility="Hidden" Name="ZapriGrafbtn" Click="ZapriGrafbtn_Click"  HorizontalAlignment="Left" Margin="679,397,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
