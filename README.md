@@ -11,3 +11,7 @@ odpiranje (šifriranega besedila in referenčnega besedila) in shranjevanje bese
 izdelavo in izris grafa, ki prikazuje frekvenčno porazdelitev črk v danem besedilu (šifrirano, referenčno in razkrito besedilo).
 
 Primer naloge: 
+https://i.imgur.com/OO5u1om.png 
+
+Graf: 
+https://i.imgur.com/pugysLu.png
