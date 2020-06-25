@@ -1,4 +1,4 @@
-# Frkvenčna analiza
+# Frekvenčna analiza
 
 
 Vaša naloga je izdelava programa za frekvenčno analizo, ki omogoča (delno) razkritje besedila in ročno zamenjavo posameznih črk ključa. 
